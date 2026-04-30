@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3[cite: 2]
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -19,25 +19,23 @@ jobs:
           node-version: '18'
 
       - name: Install Dependencies
-        run: npm install[cite: 2]
+        run: npm install
 
       - name: Run HTMLHint
-        run: npx htmlhint "src/*.html"[cite: 2]
+        run: npx htmlhint "src/*.html"
 
       - name: Run Stylelint
-        run: npx stylelint "styles/*.css"[cite: 2]
+        run: npx stylelint "styles/*.css"
 
       - name: Build with Parcel
-        run: npx parcel build src/index.html --dist-dir dist[cite: 2]
+        run: npx parcel build src/index.html --dist-dir dist
 
   Docker-Build:
     needs: Quality-Check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3[cite: 2]
+        uses: actions/checkout@v3
 
       - name: Build Docker Image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/notice-board:latest .[cite: 2]
-      
-      # We will add the "Push to Docker Hub" part once you have your secrets ready!
+        run: docker build -t notice-board:latest .
