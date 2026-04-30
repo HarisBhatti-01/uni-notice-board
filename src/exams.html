@@ -2,11 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>University Notice Board - exams</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Schedule - University Board</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        /* Small local tweak for table readability */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #036; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+    </style>
 </head>
 <body>
-    <h1>University Notice Board</h1>
-    <p>Content coming soon...</p>
+    <header>
+        <h1>Examination Department</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="notices.html">Notices</a>
+            <a href="exams.html">Exams</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Final Term Date Sheet - Spring 2026</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject Code</th>
+                        <th>Subject Name</th>
+                        <th>Date</th>
+                        <th>Room</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CS-301</td>
+                        <td>Operating Systems</td>
+                        <td>May 10, 2026</td>
+                        <td>Lab 01</td>
+                    </tr>
+                    <tr>
+                        <td>CS-305</td>
+                        <td>Parallel Computing</td>
+                        <td>May 12, 2026</td>
+                        <td>Hall A</td>
+                    </tr>
+                    <tr>
+                        <td>CS-402</td>
+                        <td>Network Security</td>
+                        <td>May 15, 2026</td>
+                        <td>Room 204</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
