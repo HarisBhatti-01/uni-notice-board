@@ -1,0 +1,25 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Menu */
+nav {
+    background: #333;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* Headings */
+h1 {
+    color: #2c3e50;
+}
