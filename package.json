@@ -2,14 +2,14 @@
   "name": "uni-notice-board",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:html": "htmlhint \"src/*.html\"",
+    "test:css": "stylelint \"styles/*.css\"",
+    "build": "parcel build src/index.html --dist-dir dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "htmlhint": "^1.9.2",
     "parcel": "^2.16.4",
